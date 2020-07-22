@@ -1,31 +1,4457 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>A Finance App</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Test</title>
+    <link rel="stylesheet" href="/static/css/tab_styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="#" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>A Finance App</h1>
-        <p>Scraping data from moneycontrol.com</p>
-        <p class="view"><a href="https://github.com/utkarshtandon99">My GitHub Profile</a></p>
-      </header>
-      <section>
-        <h3>
-<a id="Why I am doing this" class="anchor" href="#y-i-am-doing-this" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Why I am doing this...</h3>
-<p>A simple, yet essential project to learn concepts of Pandas Dataframes, Web Scraping and building my first website.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages</small></p>
-      </footer>
+</head>
+<body>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..." title="Type in a name">
+
+            <table border="1" class="dataframe data" id="cumlative">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Companies</th>
+      <th>ABC Value</th>
+      <th>UTI Value</th>
+      <th>AMC Value</th>
+      <th>DSP Value</th>
+      <th>HDFCe Value</th>
+      <th>Franklin Value</th>
+      <th>ABSLe Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>HDFC Bank Ltd.</td>
+      <td>9373.8</td>
+      <td>5647.5</td>
+      <td>3987.4</td>
+      <td>2113.2</td>
+      <td>5830.1</td>
+      <td>6661.6</td>
+      <td>8430.3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Avenue Supermarts Ltd.</td>
+      <td>8448.8</td>
+      <td>2255.3</td>
+      <td>4084.8</td>
+      <td>710.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Infosys Ltd.</td>
+      <td>7994.9</td>
+      <td>3338.8</td>
+      <td>2380.5</td>
+      <td>0.0</td>
+      <td>10086.7</td>
+      <td>5528.0</td>
+      <td>4412.9</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Kotak Mahindra Bank Ltd.</td>
+      <td>7870.3</td>
+      <td>3998.6</td>
+      <td>3733.2</td>
+      <td>731.7</td>
+      <td>0.0</td>
+      <td>1591.2</td>
+      <td>2078.8</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Bharti Airtel Ltd.</td>
+      <td>7156.2</td>
+      <td>1865.4</td>
+      <td>3066.9</td>
+      <td>1819.8</td>
+      <td>0.0</td>
+      <td>5802.3</td>
+      <td>6726.1</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Tata Consultancy Services Ltd.</td>
+      <td>6787.4</td>
+      <td>3396.8</td>
+      <td>2287.9</td>
+      <td>781.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Reliance Industries Ltd.</td>
+      <td>6267.6</td>
+      <td>1889.1</td>
+      <td>1889.1</td>
+      <td>0.0</td>
+      <td>9541.6</td>
+      <td>0.0</td>
+      <td>2315.2</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>ICICI Bank Ltd.</td>
+      <td>5941.9</td>
+      <td>2589.2</td>
+      <td>2589.2</td>
+      <td>1913.2</td>
+      <td>15890.2</td>
+      <td>3983.4</td>
+      <td>7482.2</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Nestle India Ltd.</td>
+      <td>5692.0</td>
+      <td>1445.1</td>
+      <td>2490.8</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Bajaj Finance Ltd.</td>
+      <td>5665.6</td>
+      <td>4417.0</td>
+      <td>2442.1</td>
+      <td>1151.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1460.4</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Hindustan Unilever Ltd.</td>
+      <td>5431.4</td>
+      <td>2438.0</td>
+      <td>2438.0</td>
+      <td>216.0</td>
+      <td>0.0</td>
+      <td>678.4</td>
+      <td>1622.6</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Asian Paints (india) Ltd.</td>
+      <td>4376.1</td>
+      <td>2019.7</td>
+      <td>2019.7</td>
+      <td>526.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>412.3</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Nifty 50 : Futures Near</td>
+      <td>3870.0</td>
+      <td>1644.9</td>
+      <td>1644.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Divis Laboratories Ltd.</td>
+      <td>3752.5</td>
+      <td>1700.9</td>
+      <td>1553.6</td>
+      <td>649.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Dr. Reddys Laboratories Ltd.</td>
+      <td>3012.7</td>
+      <td>1160.3</td>
+      <td>1160.3</td>
+      <td>644.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>4518.7</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Housing Development Finance Corporation Ltd.</td>
+      <td>2803.5</td>
+      <td>3988.1</td>
+      <td>729.9</td>
+      <td>294.9</td>
+      <td>2693.6</td>
+      <td>1161.2</td>
+      <td>867.6</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Maruti Suzuki India Ltd.</td>
+      <td>2188.2</td>
+      <td>1957.5</td>
+      <td>701.4</td>
+      <td>219.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>981.6</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Titan Company Ltd.</td>
+      <td>1931.3</td>
+      <td>1341.1</td>
+      <td>703.1</td>
+      <td>317.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>792.1</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>HDFC Standard Life Insurance Company Ltd.</td>
+      <td>1861.8</td>
+      <td>567.9</td>
+      <td>567.9</td>
+      <td>499.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Pidilite Industries Ltd.</td>
+      <td>1718.0</td>
+      <td>1198.0</td>
+      <td>662.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Torrent Pharmaceuticals Ltd.</td>
+      <td>1663.2</td>
+      <td>1675.3</td>
+      <td>725.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Sun Pharmaceutical Industries Ltd. : Futures Near</td>
+      <td>1359.7</td>
+      <td>577.1</td>
+      <td>577.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Cipla Ltd.</td>
+      <td>1345.4</td>
+      <td>254.2</td>
+      <td>254.2</td>
+      <td>0.0</td>
+      <td>2926.4</td>
+      <td>0.0</td>
+      <td>514.8</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Ultratech Cement Ltd.</td>
+      <td>1327.7</td>
+      <td>650.3</td>
+      <td>650.3</td>
+      <td>1269.6</td>
+      <td>0.0</td>
+      <td>1796.2</td>
+      <td>1300.4</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>ICICI Lombard General Insurance Co Ltd.</td>
+      <td>1059.9</td>
+      <td>936.5</td>
+      <td>936.5</td>
+      <td>525.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2728.5</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Reliance Industries Ltd. - Rights</td>
+      <td>53.2</td>
+      <td>16.3</td>
+      <td>16.3</td>
+      <td>0.0</td>
+      <td>340.4</td>
+      <td>0.0</td>
+      <td>23.4</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Larsen &amp; Toubro Infotech Ltd.</td>
+      <td>0.0</td>
+      <td>3720.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Info Edge (India) Ltd.</td>
+      <td>0.0</td>
+      <td>3077.8</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Shree Cement Ltd.</td>
+      <td>0.0</td>
+      <td>2627.9</td>
+      <td>0.0</td>
+      <td>704.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Astral Poly Technik Ltd.</td>
+      <td>0.0</td>
+      <td>2320.3</td>
+      <td>478.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>DR. LAL PATHLABS Ltd.</td>
+      <td>0.0</td>
+      <td>1907.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Pi Industries Ltd.</td>
+      <td>0.0</td>
+      <td>1700.1</td>
+      <td>0.0</td>
+      <td>160.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>Jubilant Foodworks Ltd.</td>
+      <td>0.0</td>
+      <td>1631.8</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>Ipca Laboratories Ltd.</td>
+      <td>0.0</td>
+      <td>1555.5</td>
+      <td>7.9</td>
+      <td>306.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>Endurance Technologies Ltd.</td>
+      <td>0.0</td>
+      <td>1534.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Motherson Sumi Systems Ltd.</td>
+      <td>0.0</td>
+      <td>1514.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Ajanta Pharma Limited</td>
+      <td>0.0</td>
+      <td>1484.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>Eicher Motors Ltd.</td>
+      <td>0.0</td>
+      <td>1464.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>Marico Ltd.</td>
+      <td>0.0</td>
+      <td>1388.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1822.1</td>
+      <td>187.4</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>Sun Pharmaceutical Industries Ltd.</td>
+      <td>0.0</td>
+      <td>1367.8</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1913.9</td>
+      <td>1138.2</td>
+      <td>4514.0</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>Au Small Finance Bank Ltd.</td>
+      <td>0.0</td>
+      <td>1326.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>Cadila Healthcare Ltd.</td>
+      <td>0.0</td>
+      <td>1309.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1309.5</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>Metropolis Healthcare Ltd.</td>
+      <td>0.0</td>
+      <td>1300.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>983.7</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>Dabur India Ltd.</td>
+      <td>0.0</td>
+      <td>1264.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1026.2</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>Grindwell Norton Ltd.</td>
+      <td>0.0</td>
+      <td>1238.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Page Industries Ltd.</td>
+      <td>0.0</td>
+      <td>1198.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>Berger Paints India Ltd.</td>
+      <td>0.0</td>
+      <td>1198.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>Schaeffler India Ltd.</td>
+      <td>0.0</td>
+      <td>1189.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>Havells India Ltd.</td>
+      <td>0.0</td>
+      <td>1159.7</td>
+      <td>0.0</td>
+      <td>373.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>164.1</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>Amara Raja Batteries Limited</td>
+      <td>0.0</td>
+      <td>1134.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>Sheela Foam Ltd.</td>
+      <td>0.0</td>
+      <td>1109.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>City Union Bank Ltd.</td>
+      <td>0.0</td>
+      <td>1055.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>Mindtree Ltd.</td>
+      <td>0.0</td>
+      <td>1011.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>Crompton Greaves Consumer Electricals Ltd.</td>
+      <td>0.0</td>
+      <td>998.9</td>
+      <td>0.0</td>
+      <td>359.4</td>
+      <td>0.0</td>
+      <td>224.4</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>Indusind Bank Ltd.</td>
+      <td>0.0</td>
+      <td>994.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>826.7</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>Syngene International Ltd.</td>
+      <td>0.0</td>
+      <td>978.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>Eris Lifesciences Ltd.</td>
+      <td>0.0</td>
+      <td>910.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>206.2</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>Cera Sanitaryware Ltd.</td>
+      <td>0.0</td>
+      <td>651.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Symphony Ltd.</td>
+      <td>0.0</td>
+      <td>641.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>Indiamart Intermesh Ltd.</td>
+      <td>0.0</td>
+      <td>559.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>Relaxo Footwears Ltd.</td>
+      <td>0.0</td>
+      <td>528.6</td>
+      <td>0.0</td>
+      <td>321.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>eClerx Services Ltd.</td>
+      <td>0.0</td>
+      <td>473.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>La-Opala RG Ltd.</td>
+      <td>0.0</td>
+      <td>377.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>Igarashi Motors India Ltd.</td>
+      <td>0.0</td>
+      <td>194.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>Spartek Ceramics Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>Mukerian Papers Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>MTZ Polyfilms Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>Modern Syntex (india) Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>Kothari Industrial Corporation Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>Nihon Nirmaan Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>Bata India Ltd.</td>
+      <td>0.0</td>
+      <td>501.4</td>
+      <td>501.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>TTK Prestige Ltd.</td>
+      <td>0.0</td>
+      <td>443.9</td>
+      <td>443.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>Tata Consumer Products Ltd.</td>
+      <td>0.0</td>
+      <td>383.9</td>
+      <td>383.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1081.2</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>Whirlpool Of India Ltd.</td>
+      <td>0.0</td>
+      <td>162.9</td>
+      <td>162.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1095.8</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>Trent Limited</td>
+      <td>0.0</td>
+      <td>103.8</td>
+      <td>103.8</td>
+      <td>305.9</td>
+      <td>0.0</td>
+      <td>211.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>V-Guard Industries Ltd.</td>
+      <td>0.0</td>
+      <td>85.2</td>
+      <td>85.2</td>
+      <td>234.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>Britannia Industries Ltd.</td>
+      <td>0.0</td>
+      <td>39.7</td>
+      <td>39.7</td>
+      <td>700.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>Narayana Hrudayalaya Ltd.</td>
+      <td>0.0</td>
+      <td>12.6</td>
+      <td>12.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>Coromandel International Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>962.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>Bajaj Finserv Ltd</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>783.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>330.4</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>Muthoot Finance Pvt. Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>730.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>V-Mart Retail Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>617.8</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>Godrej Properties Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>578.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>Alkem Laboratories Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>556.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>Bajaj Auto Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>554.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>Axis Bank Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>541.0</td>
+      <td>4724.3</td>
+      <td>3002.6</td>
+      <td>2215.9</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>Atul Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>518.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1497.1</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>Indraprastha Gas Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>462.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>ICICI Prudential Life Insurance Co Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>446.4</td>
+      <td>0.0</td>
+      <td>1533.1</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>Aarti Industries Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>437.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>Voltas Limited</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>423.9</td>
+      <td>0.0</td>
+      <td>1632.5</td>
+      <td>316.9</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>Emami Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>393.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>Balkrishna Industries Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>343.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>Minda Industries Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>332.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>The Ramco Cements Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>307.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>Siemens Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>294.9</td>
+      <td>91.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>Solar Industries India Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>208.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>KEI Industries Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>203.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>KNR Constructions</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>201.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>Ahluwalia Contracts (India) Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>158.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>100</th>
+      <td>SKF India Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>120.4</td>
+      <td>0.0</td>
+      <td>462.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>101</th>
+      <td>Equitas Holdings Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>114.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td>Ganesha Ecosphere Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>67.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td>Satin Creditcare Network Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>63.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>SIP Technologies &amp; Exports Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td>Magnasound (India) Limited</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td>Larsen &amp; Toubro Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>14063.9</td>
+      <td>3262.9</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>107</th>
+      <td>State Bank Of India</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>12194.7</td>
+      <td>2016.3</td>
+      <td>1404.4</td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>ITC Limited</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>11540.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>109</th>
+      <td>National Thermal Power Corporation Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>8646.4</td>
+      <td>1976.6</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>110</th>
+      <td>Coal India Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>7741.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td>Power Grid Corporation of India Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>7657.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td>Aurobindo Pharma Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>6127.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>Bharat Petroleum Corporation Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5591.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>Power Finance Corporation Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>4686.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>115</th>
+      <td>Ambuja Cements Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>4497.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>116</th>
+      <td>Rural Electrification Corporation Limited</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>4118.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>117</th>
+      <td>Lupin Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>4032.5</td>
+      <td>1043.8</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td>Tata Steel Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>4015.9</td>
+      <td>0.0</td>
+      <td>1614.5</td>
+    </tr>
+    <tr>
+      <th>119</th>
+      <td>Cesc Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>3229.8</td>
+      <td>0.0</td>
+      <td>834.9</td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td>InterGlobe Aviation Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>3123.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>GAIL (India) Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>3050.3</td>
+      <td>1108.2</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td>Vedanta Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1829.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>123</th>
+      <td>Bank Of Baroda</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1816.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>Hindustan Petroleum Corporation Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1624.3</td>
+      <td>1731.5</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>125</th>
+      <td>SBI Cards and Payment Services Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1445.7</td>
+      <td>0.0</td>
+      <td>135.6</td>
+    </tr>
+    <tr>
+      <th>126</th>
+      <td>Kalpataru Power Transmission Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1421.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>Bharat Earth Movers Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1063.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>Bharat Dynamics Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>976.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>129</th>
+      <td>Bharti Infratel Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>953.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>Punjab National Bank</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>892.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td>Praj Industries Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>854.8</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>132</th>
+      <td>Adani Ports And Special Economic Zone Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>799.8</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>133</th>
+      <td>Canara Bank</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>790.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>134</th>
+      <td>Time Technoplast Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>282.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>135</th>
+      <td>CG Power and Industrial Solutions Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>206.5</td>
+      <td>132.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>136</th>
+      <td>Hindustan Construction Co. Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>166.8</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>137</th>
+      <td>Simplex Infrastructures Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>128.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td>Ramco Systems</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>104.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>139</th>
+      <td>Tata Steel Ltd. - Rights</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>16.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>140</th>
+      <td>Zee Entertainment Enterprises Ltd. - Preference Shares</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>15.8</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>141</th>
+      <td>Mahindra &amp; Mahindra Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>3141.7</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>142</th>
+      <td>HCL Technologies Limited</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>3026.4</td>
+      <td>2551.6</td>
+    </tr>
+    <tr>
+      <th>143</th>
+      <td>United Breweries Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1942.7</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>144</th>
+      <td>United Spirits Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1901.1</td>
+      <td>1883.0</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>Grasim Industries Limited</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1826.5</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>Associated Cement Companies Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1778.3</td>
+      <td>1314.5</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>TVS Motor Company Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1679.5</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>Tech Mahindra Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1591.4</td>
+      <td>841.9</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>Tata Motors Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1435.5</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>150</th>
+      <td>Aditya Birla Fashion and Retail Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1378.9</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>151</th>
+      <td>Vodafone Idea Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1310.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>152</th>
+      <td>Hindalco Industries Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1041.4</td>
+      <td>913.1</td>
+    </tr>
+    <tr>
+      <th>153</th>
+      <td>Jyothy Laboratories Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>921.8</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>154</th>
+      <td>Finolex Industries Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>788.7</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>155</th>
+      <td>J K Lakshmi Cement Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>773.4</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>156</th>
+      <td>Indian Oil Corporation Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>582.4</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>157</th>
+      <td>Cummins India Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>564.5</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>158</th>
+      <td>Aditya Birla Capital Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>550.2</td>
+      <td>30.8</td>
+    </tr>
+    <tr>
+      <th>159</th>
+      <td>Gujarat Pipavav Port Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>483.4</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>160</th>
+      <td>Bharat Forge Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>404.9</td>
+      <td>1305.2</td>
+    </tr>
+    <tr>
+      <th>161</th>
+      <td>Century Textile &amp; Industries Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>342.7</td>
+      <td>785.8</td>
+    </tr>
+    <tr>
+      <th>162</th>
+      <td>Apollo Tyres Limited</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>291.3</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>163</th>
+      <td>Jagran Prakashan Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>270.2</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>164</th>
+      <td>Indian Hotels Company Limited</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>234.1</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>165</th>
+      <td>Arvind Fashions Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>181.8</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>166</th>
+      <td>Tata Motors Ltd. - A Class</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>180.5</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>167</th>
+      <td>Karur Vysya Bank Ltd</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>162.1</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>168</th>
+      <td>Arvind Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>151.2</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>169</th>
+      <td>Arvind Fashions Ltd. - Rights</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>170</th>
+      <td>Numero Uno International Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>171</th>
+      <td>Quantum Information Systems</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>172</th>
+      <td>Quantum Information Ltd</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>173</th>
+      <td>Exide Industries Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2067.9</td>
+    </tr>
+    <tr>
+      <th>174</th>
+      <td>Apollo Hospitals Enterprises Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2005.9</td>
+    </tr>
+    <tr>
+      <th>175</th>
+      <td>Strides Pharma Science Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1268.6</td>
+    </tr>
+    <tr>
+      <th>176</th>
+      <td>PVR Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1215.1</td>
+    </tr>
+    <tr>
+      <th>177</th>
+      <td>Castrol (india) Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1110.9</td>
+    </tr>
+    <tr>
+      <th>178</th>
+      <td>Just Dial Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>992.0</td>
+    </tr>
+    <tr>
+      <th>179</th>
+      <td>Radico Khaitan Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>951.1</td>
+    </tr>
+    <tr>
+      <th>180</th>
+      <td>Bharat Electronics Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>852.2</td>
+    </tr>
+    <tr>
+      <th>181</th>
+      <td>NMDC LTD</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>832.0</td>
+    </tr>
+    <tr>
+      <th>182</th>
+      <td>Orissa Cement Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>829.3</td>
+    </tr>
+    <tr>
+      <th>183</th>
+      <td>Max Financial Services Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>796.2</td>
+    </tr>
+    <tr>
+      <th>184</th>
+      <td>Tata Chemicals Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>792.1</td>
+    </tr>
+    <tr>
+      <th>185</th>
+      <td>Cholamandalam Investment &amp; Finance Co. Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>675.8</td>
+    </tr>
+    <tr>
+      <th>186</th>
+      <td>RBL Bank Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>657.1</td>
+    </tr>
+    <tr>
+      <th>187</th>
+      <td>Mphasis Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>598.9</td>
+    </tr>
+    <tr>
+      <th>188</th>
+      <td>Hero Motocorp Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>562.6</td>
+    </tr>
+    <tr>
+      <th>189</th>
+      <td>Kansai Nerolac Paints Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>544.7</td>
+    </tr>
+    <tr>
+      <th>190</th>
+      <td>MRF Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>472.9</td>
+    </tr>
+    <tr>
+      <th>191</th>
+      <td>AIA Engineering Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>383.2</td>
+    </tr>
+    <tr>
+      <th>192</th>
+      <td>Dishman Carbogen Amcis Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>198.1</td>
+    </tr>
+    <tr>
+      <th>193</th>
+      <td>Infrastructure Development Finance Company Limited</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>196.2</td>
+    </tr>
+    <tr>
+      <th>194</th>
+      <td>Dish T V India Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>124.7</td>
+    </tr>
+    <tr>
+      <th>195</th>
+      <td>Shriram City Union Finance Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>81.6</td>
+    </tr>
+    <tr>
+      <th>196</th>
+      <td>Kewal Kiran Clothing Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>48.2</td>
+    </tr>
+    <tr>
+      <th>197</th>
+      <td>Spencers Retail Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>26.9</td>
+    </tr>
+    <tr>
+      <th>198</th>
+      <td>Muthoot Capital Services Ltd.</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>25.5</td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+    function myFunction() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("cumlative");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }       
+      }
+    }
+    </script>
+<br>
+<br>
+<br>
+
+<!--
+<div class="divTable">
+    <div class="divTableHeading">
+    <div class="divTableRow">
+    <div class="divTableHead">&nbsp;</div>
+    <div class="divTableHead">Companies</div>
+    <div class="divTableHead">ABC Value</div>
+    <div class="divTableHead">UTI Value</div>
+    <div class="divTableHead">AMC Value</div>
+    <div class="divTableHead">DSP Value</div>
+    <div class="divTableHead">HDFCe Value</div>
+    <div class="divTableHead">Franklin Value</div>
+    <div class="divTableHead">ABSLe Value</div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+    </div>
+    <div class="divTableBody">
+    <div class="divTableRow">
+    <div class="divTableHead">0</div>
+    <div class="divTableCell">HDFC Bank Ltd.</div>
+    <div class="divTableCell">9373.8</div>
+    <div class="divTableCell">5647.5</div>
+    <div class="divTableCell">3987.4</div>
+    <div class="divTableCell">2113.2</div>
+    <div class="divTableCell">5830.1</div>
+    <div class="divTableCell">6661.6</div>
+    <div class="divTableCell">8430.3</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">1</div>
+    <div class="divTableCell">Avenue Supermarts Ltd.</div>
+    <div class="divTableCell">8448.8</div>
+    <div class="divTableCell">2255.3</div>
+    <div class="divTableCell">4084.8</div>
+    <div class="divTableCell">710.5</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">2</div>
+    <div class="divTableCell">Infosys Ltd.</div>
+    <div class="divTableCell">7994.9</div>
+    <div class="divTableCell">3338.8</div>
+    <div class="divTableCell">2380.5</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">10086.7</div>
+    <div class="divTableCell">5528.0</div>
+    <div class="divTableCell">4412.9</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">3</div>
+    <div class="divTableCell">Kotak Mahindra Bank Ltd.</div>
+    <div class="divTableCell">7870.3</div>
+    <div class="divTableCell">3998.6</div>
+    <div class="divTableCell">3733.2</div>
+    <div class="divTableCell">731.7</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1591.2</div>
+    <div class="divTableCell">2078.8</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">4</div>
+    <div class="divTableCell">Bharti Airtel Ltd.</div>
+    <div class="divTableCell">7156.2</div>
+    <div class="divTableCell">1865.4</div>
+    <div class="divTableCell">3066.9</div>
+    <div class="divTableCell">1819.8</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">5802.3</div>
+    <div class="divTableCell">6726.1</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">5</div>
+    <div class="divTableCell">Tata Consultancy Services Ltd.</div>
+    <div class="divTableCell">6787.4</div>
+    <div class="divTableCell">3396.8</div>
+    <div class="divTableCell">2287.9</div>
+    <div class="divTableCell">781.5</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">6</div>
+    <div class="divTableCell">Reliance Industries Ltd.</div>
+    <div class="divTableCell">6267.6</div>
+    <div class="divTableCell">1889.1</div>
+    <div class="divTableCell">1889.1</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">9541.6</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">2315.2</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">7</div>
+    <div class="divTableCell">ICICI Bank Ltd.</div>
+    <div class="divTableCell">5941.9</div>
+    <div class="divTableCell">2589.2</div>
+    <div class="divTableCell">2589.2</div>
+    <div class="divTableCell">1913.2</div>
+    <div class="divTableCell">15890.2</div>
+    <div class="divTableCell">3983.4</div>
+    <div class="divTableCell">7482.2</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">8</div>
+    <div class="divTableCell">Nestle India Ltd.</div>
+    <div class="divTableCell">5692.0</div>
+    <div class="divTableCell">1445.1</div>
+    <div class="divTableCell">2490.8</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">9</div>
+    <div class="divTableCell">Bajaj Finance Ltd.</div>
+    <div class="divTableCell">5665.6</div>
+    <div class="divTableCell">4417.0</div>
+    <div class="divTableCell">2442.1</div>
+    <div class="divTableCell">1151.9</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1460.4</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">10</div>
+    <div class="divTableCell">Hindustan Unilever Ltd.</div>
+    <div class="divTableCell">5431.4</div>
+    <div class="divTableCell">2438.0</div>
+    <div class="divTableCell">2438.0</div>
+    <div class="divTableCell">216.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">678.4</div>
+    <div class="divTableCell">1622.6</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">11</div>
+    <div class="divTableCell">Asian Paints (india) Ltd.</div>
+    <div class="divTableCell">4376.1</div>
+    <div class="divTableCell">2019.7</div>
+    <div class="divTableCell">2019.7</div>
+    <div class="divTableCell">526.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">412.3</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">12</div>
+    <div class="divTableCell">Nifty 50 : Futures Near</div>
+    <div class="divTableCell">3870.0</div>
+    <div class="divTableCell">1644.9</div>
+    <div class="divTableCell">1644.9</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">13</div>
+    <div class="divTableCell">Divis Laboratories Ltd.</div>
+    <div class="divTableCell">3752.5</div>
+    <div class="divTableCell">1700.9</div>
+    <div class="divTableCell">1553.6</div>
+    <div class="divTableCell">649.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">14</div>
+    <div class="divTableCell">Dr. Reddys Laboratories Ltd.</div>
+    <div class="divTableCell">3012.7</div>
+    <div class="divTableCell">1160.3</div>
+    <div class="divTableCell">1160.3</div>
+    <div class="divTableCell">644.5</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">4518.7</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">15</div>
+    <div class="divTableCell">Housing Development Finance Corporation Ltd.</div>
+    <div class="divTableCell">2803.5</div>
+    <div class="divTableCell">3988.1</div>
+    <div class="divTableCell">729.9</div>
+    <div class="divTableCell">294.9</div>
+    <div class="divTableCell">2693.6</div>
+    <div class="divTableCell">1161.2</div>
+    <div class="divTableCell">867.6</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">16</div>
+    <div class="divTableCell">Maruti Suzuki India Ltd.</div>
+    <div class="divTableCell">2188.2</div>
+    <div class="divTableCell">1957.5</div>
+    <div class="divTableCell">701.4</div>
+    <div class="divTableCell">219.5</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">981.6</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">17</div>
+    <div class="divTableCell">Titan Company Ltd.</div>
+    <div class="divTableCell">1931.3</div>
+    <div class="divTableCell">1341.1</div>
+    <div class="divTableCell">703.1</div>
+    <div class="divTableCell">317.2</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">792.1</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">18</div>
+    <div class="divTableCell">HDFC Standard Life Insurance Company Ltd.</div>
+    <div class="divTableCell">1861.8</div>
+    <div class="divTableCell">567.9</div>
+    <div class="divTableCell">567.9</div>
+    <div class="divTableCell">499.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">19</div>
+    <div class="divTableCell">Pidilite Industries Ltd.</div>
+    <div class="divTableCell">1718.0</div>
+    <div class="divTableCell">1198.0</div>
+    <div class="divTableCell">662.5</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">20</div>
+    <div class="divTableCell">Torrent Pharmaceuticals Ltd.</div>
+    <div class="divTableCell">1663.2</div>
+    <div class="divTableCell">1675.3</div>
+    <div class="divTableCell">725.3</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">21</div>
+    <div class="divTableCell">Sun Pharmaceutical Industries Ltd. : Futures Near</div>
+    <div class="divTableCell">1359.7</div>
+    <div class="divTableCell">577.1</div>
+    <div class="divTableCell">577.1</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">22</div>
+    <div class="divTableCell">Cipla Ltd.</div>
+    <div class="divTableCell">1345.4</div>
+    <div class="divTableCell">254.2</div>
+    <div class="divTableCell">254.2</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">2926.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">514.8</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">23</div>
+    <div class="divTableCell">Ultratech Cement Ltd.</div>
+    <div class="divTableCell">1327.7</div>
+    <div class="divTableCell">650.3</div>
+    <div class="divTableCell">650.3</div>
+    <div class="divTableCell">1269.6</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1796.2</div>
+    <div class="divTableCell">1300.4</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">24</div>
+    <div class="divTableCell">ICICI Lombard General Insurance Co Ltd.</div>
+    <div class="divTableCell">1059.9</div>
+    <div class="divTableCell">936.5</div>
+    <div class="divTableCell">936.5</div>
+    <div class="divTableCell">525.9</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">2728.5</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">25</div>
+    <div class="divTableCell">Reliance Industries Ltd. - Rights</div>
+    <div class="divTableCell">53.2</div>
+    <div class="divTableCell">16.3</div>
+    <div class="divTableCell">16.3</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">340.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">23.4</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">26</div>
+    <div class="divTableCell">Larsen &amp; Toubro Infotech Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">3720.2</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">27</div>
+    <div class="divTableCell">Info Edge (India) Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">3077.8</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">28</div>
+    <div class="divTableCell">Shree Cement Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">2627.9</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">704.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">29</div>
+    <div class="divTableCell">Astral Poly Technik Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">2320.3</div>
+    <div class="divTableCell">478.7</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">30</div>
+    <div class="divTableCell">DR. LAL PATHLABS Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1907.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">31</div>
+    <div class="divTableCell">Pi Industries Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1700.1</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">160.3</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">32</div>
+    <div class="divTableCell">Jubilant Foodworks Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1631.8</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">33</div>
+    <div class="divTableCell">Ipca Laboratories Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1555.5</div>
+    <div class="divTableCell">7.9</div>
+    <div class="divTableCell">306.3</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">34</div>
+    <div class="divTableCell">Endurance Technologies Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1534.9</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">35</div>
+    <div class="divTableCell">Motherson Sumi Systems Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1514.5</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">36</div>
+    <div class="divTableCell">Ajanta Pharma Limited</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1484.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">37</div>
+    <div class="divTableCell">Eicher Motors Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1464.5</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">38</div>
+    <div class="divTableCell">Marico Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1388.7</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1822.1</div>
+    <div class="divTableCell">187.4</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">39</div>
+    <div class="divTableCell">Sun Pharmaceutical Industries Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1367.8</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1913.9</div>
+    <div class="divTableCell">1138.2</div>
+    <div class="divTableCell">4514.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">40</div>
+    <div class="divTableCell">Au Small Finance Bank Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1326.5</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">41</div>
+    <div class="divTableCell">Cadila Healthcare Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1309.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1309.5</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">42</div>
+    <div class="divTableCell">Metropolis Healthcare Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1300.1</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">983.7</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">43</div>
+    <div class="divTableCell">Dabur India Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1264.1</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1026.2</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">44</div>
+    <div class="divTableCell">Grindwell Norton Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1238.2</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">45</div>
+    <div class="divTableCell">Page Industries Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1198.6</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">46</div>
+    <div class="divTableCell">Berger Paints India Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1198.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">47</div>
+    <div class="divTableCell">Schaeffler India Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1189.1</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">48</div>
+    <div class="divTableCell">Havells India Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1159.7</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">373.2</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">164.1</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">49</div>
+    <div class="divTableCell">Amara Raja Batteries Limited</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1134.1</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">50</div>
+    <div class="divTableCell">Sheela Foam Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1109.3</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">51</div>
+    <div class="divTableCell">City Union Bank Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1055.3</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">52</div>
+    <div class="divTableCell">Mindtree Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1011.1</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">53</div>
+    <div class="divTableCell">Crompton Greaves Consumer Electricals Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">998.9</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">359.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">224.4</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">54</div>
+    <div class="divTableCell">Indusind Bank Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">994.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">826.7</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">55</div>
+    <div class="divTableCell">Syngene International Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">978.5</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">56</div>
+    <div class="divTableCell">Eris Lifesciences Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">910.7</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">206.2</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">57</div>
+    <div class="divTableCell">Cera Sanitaryware Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">651.9</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">58</div>
+    <div class="divTableCell">Symphony Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">641.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">59</div>
+    <div class="divTableCell">Indiamart Intermesh Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">559.3</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">60</div>
+    <div class="divTableCell">Relaxo Footwears Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">528.6</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">321.6</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">61</div>
+    <div class="divTableCell">eClerx Services Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">473.7</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">62</div>
+    <div class="divTableCell">La-Opala RG Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">377.3</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">63</div>
+    <div class="divTableCell">Igarashi Motors India Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">194.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">64</div>
+    <div class="divTableCell">Spartek Ceramics Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">65</div>
+    <div class="divTableCell">Mukerian Papers Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">66</div>
+    <div class="divTableCell">MTZ Polyfilms Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">67</div>
+    <div class="divTableCell">Modern Syntex (india) Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">68</div>
+    <div class="divTableCell">Kothari Industrial Corporation Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">69</div>
+    <div class="divTableCell">Nihon Nirmaan Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">70</div>
+    <div class="divTableCell">Bata India Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">501.4</div>
+    <div class="divTableCell">501.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">71</div>
+    <div class="divTableCell">TTK Prestige Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">443.9</div>
+    <div class="divTableCell">443.9</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">72</div>
+    <div class="divTableCell">Tata Consumer Products Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">383.9</div>
+    <div class="divTableCell">383.9</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1081.2</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">73</div>
+    <div class="divTableCell">Whirlpool Of India Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">162.9</div>
+    <div class="divTableCell">162.9</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1095.8</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">74</div>
+    <div class="divTableCell">Trent Limited</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">103.8</div>
+    <div class="divTableCell">103.8</div>
+    <div class="divTableCell">305.9</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">211.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">75</div>
+    <div class="divTableCell">V-Guard Industries Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">85.2</div>
+    <div class="divTableCell">85.2</div>
+    <div class="divTableCell">234.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">76</div>
+    <div class="divTableCell">Britannia Industries Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">39.7</div>
+    <div class="divTableCell">39.7</div>
+    <div class="divTableCell">700.5</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">77</div>
+    <div class="divTableCell">Narayana Hrudayalaya Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">12.6</div>
+    <div class="divTableCell">12.6</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">78</div>
+    <div class="divTableCell">Coromandel International Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">962.9</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">79</div>
+    <div class="divTableCell">Bajaj Finserv Ltd</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">783.3</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">330.4</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">80</div>
+    <div class="divTableCell">Muthoot Finance Pvt. Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">730.5</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">81</div>
+    <div class="divTableCell">V-Mart Retail Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">617.8</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">82</div>
+    <div class="divTableCell">Godrej Properties Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">578.1</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">83</div>
+    <div class="divTableCell">Alkem Laboratories Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">556.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">84</div>
+    <div class="divTableCell">Bajaj Auto Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">554.9</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">85</div>
+    <div class="divTableCell">Axis Bank Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">541.0</div>
+    <div class="divTableCell">4724.3</div>
+    <div class="divTableCell">3002.6</div>
+    <div class="divTableCell">2215.9</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">86</div>
+    <div class="divTableCell">Atul Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">518.2</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1497.1</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">87</div>
+    <div class="divTableCell">Indraprastha Gas Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">462.1</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">88</div>
+    <div class="divTableCell">ICICI Prudential Life Insurance Co Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">446.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1533.1</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">89</div>
+    <div class="divTableCell">Aarti Industries Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">437.2</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">90</div>
+    <div class="divTableCell">Voltas Limited</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">423.9</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1632.5</div>
+    <div class="divTableCell">316.9</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">91</div>
+    <div class="divTableCell">Emami Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">393.2</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">92</div>
+    <div class="divTableCell">Balkrishna Industries Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">343.6</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">93</div>
+    <div class="divTableCell">Minda Industries Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">332.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">94</div>
+    <div class="divTableCell">The Ramco Cements Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">307.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">95</div>
+    <div class="divTableCell">Siemens Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">294.9</div>
+    <div class="divTableCell">91.2</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">96</div>
+    <div class="divTableCell">Solar Industries India Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">208.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">97</div>
+    <div class="divTableCell">KEI Industries Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">203.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">98</div>
+    <div class="divTableCell">KNR Constructions</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">201.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">99</div>
+    <div class="divTableCell">Ahluwalia Contracts (India) Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">158.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">100</div>
+    <div class="divTableCell">SKF India Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">120.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">462.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">101</div>
+    <div class="divTableCell">Equitas Holdings Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">114.3</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">102</div>
+    <div class="divTableCell">Ganesha Ecosphere Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">67.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">103</div>
+    <div class="divTableCell">Satin Creditcare Network Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">63.2</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">104</div>
+    <div class="divTableCell">SIP Technologies &amp; Exports Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">105</div>
+    <div class="divTableCell">Magnasound (India) Limited</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">106</div>
+    <div class="divTableCell">Larsen &amp; Toubro Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">14063.9</div>
+    <div class="divTableCell">3262.9</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">107</div>
+    <div class="divTableCell">State Bank Of India</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">12194.7</div>
+    <div class="divTableCell">2016.3</div>
+    <div class="divTableCell">1404.4</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">108</div>
+    <div class="divTableCell">ITC Limited</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">11540.7</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">109</div>
+    <div class="divTableCell">National Thermal Power Corporation Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">8646.4</div>
+    <div class="divTableCell">1976.6</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">110</div>
+    <div class="divTableCell">Coal India Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">7741.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">111</div>
+    <div class="divTableCell">Power Grid Corporation of India Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">7657.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">112</div>
+    <div class="divTableCell">Aurobindo Pharma Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">6127.7</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">113</div>
+    <div class="divTableCell">Bharat Petroleum Corporation Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">5591.7</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">114</div>
+    <div class="divTableCell">Power Finance Corporation Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">4686.1</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">115</div>
+    <div class="divTableCell">Ambuja Cements Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">4497.7</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">116</div>
+    <div class="divTableCell">Rural Electrification Corporation Limited</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">4118.6</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">117</div>
+    <div class="divTableCell">Lupin Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">4032.5</div>
+    <div class="divTableCell">1043.8</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">118</div>
+    <div class="divTableCell">Tata Steel Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">4015.9</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1614.5</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">119</div>
+    <div class="divTableCell">Cesc Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">3229.8</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">834.9</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">120</div>
+    <div class="divTableCell">InterGlobe Aviation Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">3123.3</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">121</div>
+    <div class="divTableCell">GAIL (India) Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">3050.3</div>
+    <div class="divTableCell">1108.2</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">122</div>
+    <div class="divTableCell">Vedanta Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1829.5</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">123</div>
+    <div class="divTableCell">Bank Of Baroda</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1816.5</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">124</div>
+    <div class="divTableCell">Hindustan Petroleum Corporation Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1624.3</div>
+    <div class="divTableCell">1731.5</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">125</div>
+    <div class="divTableCell">SBI Cards and Payment Services Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1445.7</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">135.6</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">126</div>
+    <div class="divTableCell">Kalpataru Power Transmission Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1421.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">127</div>
+    <div class="divTableCell">Bharat Earth Movers Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1063.7</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">128</div>
+    <div class="divTableCell">Bharat Dynamics Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">976.5</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">129</div>
+    <div class="divTableCell">Bharti Infratel Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">953.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">130</div>
+    <div class="divTableCell">Punjab National Bank</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">892.4</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">131</div>
+    <div class="divTableCell">Praj Industries Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">854.8</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">132</div>
+    <div class="divTableCell">Adani Ports And Special Economic Zone Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">799.8</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">133</div>
+    <div class="divTableCell">Canara Bank</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">790.2</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">134</div>
+    <div class="divTableCell">Time Technoplast Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">282.2</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">135</div>
+    <div class="divTableCell">CG Power and Industrial Solutions Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">206.5</div>
+    <div class="divTableCell">132.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">136</div>
+    <div class="divTableCell">Hindustan Construction Co. Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">166.8</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">137</div>
+    <div class="divTableCell">Simplex Infrastructures Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">128.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">138</div>
+    <div class="divTableCell">Ramco Systems</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">104.1</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">139</div>
+    <div class="divTableCell">Tata Steel Ltd. - Rights</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">16.2</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">140</div>
+    <div class="divTableCell">Zee Entertainment Enterprises Ltd. - Preference Shares</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">15.8</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">141</div>
+    <div class="divTableCell">Mahindra &amp; Mahindra Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">3141.7</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">142</div>
+    <div class="divTableCell">HCL Technologies Limited</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">3026.4</div>
+    <div class="divTableCell">2551.6</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">143</div>
+    <div class="divTableCell">United Breweries Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1942.7</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">144</div>
+    <div class="divTableCell">United Spirits Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1901.1</div>
+    <div class="divTableCell">1883.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">145</div>
+    <div class="divTableCell">Grasim Industries Limited</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1826.5</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">146</div>
+    <div class="divTableCell">Associated Cement Companies Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1778.3</div>
+    <div class="divTableCell">1314.5</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">147</div>
+    <div class="divTableCell">TVS Motor Company Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1679.5</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">148</div>
+    <div class="divTableCell">Tech Mahindra Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1591.4</div>
+    <div class="divTableCell">841.9</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">149</div>
+    <div class="divTableCell">Tata Motors Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1435.5</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">150</div>
+    <div class="divTableCell">Aditya Birla Fashion and Retail Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1378.9</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">151</div>
+    <div class="divTableCell">Vodafone Idea Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1310.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">152</div>
+    <div class="divTableCell">Hindalco Industries Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1041.4</div>
+    <div class="divTableCell">913.1</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">153</div>
+    <div class="divTableCell">Jyothy Laboratories Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">921.8</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">154</div>
+    <div class="divTableCell">Finolex Industries Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">788.7</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">155</div>
+    <div class="divTableCell">J K Lakshmi Cement Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">773.4</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">156</div>
+    <div class="divTableCell">Indian Oil Corporation Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">582.4</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">157</div>
+    <div class="divTableCell">Cummins India Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">564.5</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">158</div>
+    <div class="divTableCell">Aditya Birla Capital Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">550.2</div>
+    <div class="divTableCell">30.8</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">159</div>
+    <div class="divTableCell">Gujarat Pipavav Port Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">483.4</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">160</div>
+    <div class="divTableCell">Bharat Forge Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">404.9</div>
+    <div class="divTableCell">1305.2</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">161</div>
+    <div class="divTableCell">Century Textile &amp; Industries Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">342.7</div>
+    <div class="divTableCell">785.8</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">162</div>
+    <div class="divTableCell">Apollo Tyres Limited</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">291.3</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">163</div>
+    <div class="divTableCell">Jagran Prakashan Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">270.2</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">164</div>
+    <div class="divTableCell">Indian Hotels Company Limited</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">234.1</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">165</div>
+    <div class="divTableCell">Arvind Fashions Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">181.8</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">166</div>
+    <div class="divTableCell">Tata Motors Ltd. - A Class</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">180.5</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">167</div>
+    <div class="divTableCell">Karur Vysya Bank Ltd</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">162.1</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">168</div>
+    <div class="divTableCell">Arvind Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">151.2</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">169</div>
+    <div class="divTableCell">Arvind Fashions Ltd. - Rights</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">170</div>
+    <div class="divTableCell">Numero Uno International Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">171</div>
+    <div class="divTableCell">Quantum Information Systems</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">172</div>
+    <div class="divTableCell">Quantum Information Ltd</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">173</div>
+    <div class="divTableCell">Exide Industries Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">2067.9</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">174</div>
+    <div class="divTableCell">Apollo Hospitals Enterprises Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">2005.9</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">175</div>
+    <div class="divTableCell">Strides Pharma Science Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1268.6</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">176</div>
+    <div class="divTableCell">PVR Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1215.1</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">177</div>
+    <div class="divTableCell">Castrol (india) Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">1110.9</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">178</div>
+    <div class="divTableCell">Just Dial Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">992.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">179</div>
+    <div class="divTableCell">Radico Khaitan Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">951.1</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">180</div>
+    <div class="divTableCell">Bharat Electronics Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">852.2</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">181</div>
+    <div class="divTableCell">NMDC LTD</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">832.0</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">182</div>
+    <div class="divTableCell">Orissa Cement Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">829.3</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">183</div>
+    <div class="divTableCell">Max Financial Services Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">796.2</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">184</div>
+    <div class="divTableCell">Tata Chemicals Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">792.1</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">185</div>
+    <div class="divTableCell">Cholamandalam Investment &amp; Finance Co. Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">675.8</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">186</div>
+    <div class="divTableCell">RBL Bank Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">657.1</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">187</div>
+    <div class="divTableCell">Mphasis Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">598.9</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">188</div>
+    <div class="divTableCell">Hero Motocorp Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">562.6</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">189</div>
+    <div class="divTableCell">Kansai Nerolac Paints Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">544.7</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">190</div>
+    <div class="divTableCell">MRF Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">472.9</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">191</div>
+    <div class="divTableCell">AIA Engineering Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">383.2</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">192</div>
+    <div class="divTableCell">Dishman Carbogen Amcis Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">198.1</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">193</div>
+    <div class="divTableCell">Infrastructure Development Finance Company Limited</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">196.2</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">194</div>
+    <div class="divTableCell">Dish T V India Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">124.7</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">195</div>
+    <div class="divTableCell">Shriram City Union Finance Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">81.6</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">196</div>
+    <div class="divTableCell">Kewal Kiran Clothing Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">48.2</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">197</div>
+    <div class="divTableCell">Spencers Retail Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">26.9</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">198</div>
+    <div class="divTableCell">Muthoot Capital Services Ltd.</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">0.0</div>
+    <div class="divTableCell">25.5</div>
+    </div>
+    </div>
+    </div>--!>
+</body>
 </html>
