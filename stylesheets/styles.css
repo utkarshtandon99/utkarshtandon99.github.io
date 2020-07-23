@@ -12,6 +12,7 @@ body {
   background-color: #e28383;
   padding: 20px 10px;
   box-shadow: 1px 5px 5px 1px rgba(192, 76, 76, 0.4);
+  width: 100%;
 }
 
 .header a {
