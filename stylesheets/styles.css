@@ -68,6 +68,7 @@ table{
     border-collapse: separate;
     border-spacing: 0;
     box-shadow: 1px 8px 8px 1px rgba(73, 72, 72, 0.4);
+    margin-left: 35px;
 }
 #cumlative tr:hover {
     background-color: #cc6e6e;
