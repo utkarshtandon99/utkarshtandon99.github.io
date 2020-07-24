@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-  overflow: auto;
+  overflow: hidden;
   background-color: #e28383;
   padding: 27px 75px;
   box-shadow: 1px 5px 5px 1px rgba(192, 76, 76, 0.4);
