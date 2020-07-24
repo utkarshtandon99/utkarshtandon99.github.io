@@ -18,7 +18,7 @@ body {
 .header {
   overflow: auto;
   background-color: #e28383;
-  padding: 10px 10px;
+  padding: 27px 75px;
   box-shadow: 1px 5px 5px 1px rgba(192, 76, 76, 0.4);
   width: 100%;
   height: 100px;
@@ -87,7 +87,7 @@ input[type=text] {
     border: 3px solid rgb(243, 73, 73);
     margin-bottom: 32px;
     margin-top: 32px;
-    margin-left: 35px;
+    margin-left: 8%;
     width: 130px;
     border-radius: 4px;
     background-color: rgb(245, 160, 160);
@@ -144,7 +144,6 @@ table{
     border-collapse: separate;
     border-spacing: 0;
     box-shadow: 1px 8px 8px 1px rgba(73, 72, 72, 0.4);
-    margin-left: 15px;
     margin-right: 35px;
     animation: fadeInAnimation ease 3.5s;
     animation-iteration-count: 1;
@@ -175,4 +174,24 @@ tr:nth-child(even) {
 }
 td:first-child, th:first-child {
     border-left: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5a4747; 
 }
