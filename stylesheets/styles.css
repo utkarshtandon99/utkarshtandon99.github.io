@@ -111,12 +111,12 @@ input[type=text] {
     background-color: rgb(245, 160, 160);
     background-position: 10px 10px; 
     box-shadow: 1px 5px 5px 1px rgba(73, 72, 72, 0.4); 
-    animation-name: example;
-    animation-duration: 2s;
+    animation-name: transsearch;
+    animation-duration: 1s;
     position: relative;
     animation-fill-mode: backwards;
 }
-@keyframes example{
+@keyframes transsearch{
   from{
     right: 200px;
   }
