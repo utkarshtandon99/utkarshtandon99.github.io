@@ -11,14 +11,46 @@ body {
     opacity: 1;
   }
 }
-
+hr.line1{
+  border: 2px solid rgb(235, 78, 78);
+  margin-left: 100px;
+  margin-right: 100px;
+  animation-name: transline1;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+@keyframes transline1{
+  from{
+    right: 800px;
+  }
+  to{
+    right: 0px;
+  }
+}
+hr.line2{
+  border: 2px solid rgb(87, 130, 223);
+  margin-left: 100px;
+  margin-right: 100px;
+  animation-name: transline2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+@keyframes transline2{
+  from{
+    left: 800px;
+  }
+  to{
+    left: 0px;
+  }
+}
 .header {
   overflow: hidden;
-  background-color: #db6a6a;
+  background-color: white;
   padding: 27px 75px;
-  box-shadow: 1px 5px 5px 1px rgba(192, 76, 76, 0.4);
   width: 100%;
-  height: 100px;
+  height: 68px;
   animation-name: transheader;
   position: relative;
   animation-duration: 1s;
