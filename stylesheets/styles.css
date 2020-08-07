@@ -292,6 +292,9 @@ table{
 #cumlative tr:hover {
     background-color: #cc6e6e;
 }
+#debtbody tr:hover {
+    background-color: #cc6e6e;
+}
 th{
     color: rgb(241, 243, 232);
     background-color: #be4c4c;
