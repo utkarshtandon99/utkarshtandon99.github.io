@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="header">
-  <a href="#default" class="logo">MyScraper</a>
+  <a href="https://utkarshtandon99.github.io/" class="logo">MyScraper</a>
 </div>
 <hr class="line1">
 <div class="tabs">
@@ -3837,6 +3837,7 @@
       <label for="tab2-2">Debt</label>
       <input id="tab2-2" name="tabs-two" type="radio">
       <div>
+          <input type="text" id="myInput2" onkeyup="myFunction()" placeholder="Search..." title="Type in a name">
         <div class="tabdiv">
             <table border="1" class="dataframe data" id="cumlativedbt">
   <thead>
@@ -3847,7 +3848,7 @@
       <th>Franklin Value</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody id="debtbody">
     <tr>
       <th>0</th>
       <td>Bond - Govt of India</td>
@@ -4158,6 +4159,17 @@ $(document).ready(function(){
       });
     });
     </script>
+    <script>
+<script>
+    $(document).ready(function(){
+      $("#myInput2").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#debtbody tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+</script>
     <script>
 function sortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
