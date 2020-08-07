@@ -17,9 +17,13 @@
   <a href="#default" class="logo">MyScraper</a>
 </div>
 <hr class="line1">
-<hr class="line2">
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..." title="Type in a name">
-<div class="tabdiv">
+<div class="tabs">
+  <div class="tab-2">
+      <label for="tab2-1">Equity</label>
+      <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+      <div>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..." title="Type in a name">
+          <div class="tabdiv">
             <table border="1" class="dataframe data" id="cumlative">
   <thead>
     <tr style="text-align: right;">
@@ -3827,6 +3831,323 @@
   </tbody>
 </table>
     </div>
+      </div>
+  </div>
+  <div class="tab-2">
+      <label for="tab2-2">Debt</label>
+      <input id="tab2-2" name="tabs-two" type="radio">
+      <div>
+        <div class="tabdiv">
+            <table border="1" class="dataframe data" id="cumlativedbt">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Instrument</th>
+      <th>ABSL Value</th>
+      <th>Franklin Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Bond - Govt of India</td>
+      <td>15329.60</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Bond - National Bank for Agriculture &amp; Rural Development</td>
+      <td>12165.70</td>
+      <td>291.69</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Bond - Housing &amp; Urban Development Corporation Ltd.</td>
+      <td>8579.20</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Bond - Power Finance Corporation Ltd.</td>
+      <td>12633.33</td>
+      <td>900.91</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Bond - Small Industries Development Bank Of India</td>
+      <td>5464.27</td>
+      <td>313.29</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Bond - National Highways Authority of India</td>
+      <td>8513.38</td>
+      <td>385.29</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Bond - HDB Financial Services Ltd.</td>
+      <td>3072.89</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Bond - State Bank Of India</td>
+      <td>3792.57</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Bond - Indian Railway Finance Corporation Ltd.</td>
+      <td>5568.39</td>
+      <td>25.79</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Bond - Indian Oil Corporation Ltd.</td>
+      <td>2536.51</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Bond - Bharat Petroleum Corporation Ltd.</td>
+      <td>1617.42</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Bond - Tata Capital Financial Services Ltd.</td>
+      <td>1771.70</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Bond - Sikka Ports &amp; Terminals Ltd.</td>
+      <td>1378.18</td>
+      <td>124.78</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Bond - Axis Bank Ltd.</td>
+      <td>2417.59</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Bond - Reliance Industries Ltd.</td>
+      <td>1814.22</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Bond - Housing Development Finance Corporation Ltd.</td>
+      <td>2681.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Bond - National Housing Bank</td>
+      <td>1260.11</td>
+      <td>792.76</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Bond - Rural Electrification Corporation Limited</td>
+      <td>13731.96</td>
+      <td>878.27</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Bond - L&amp;T Infrastructure Finance Ltd.</td>
+      <td>1680.63</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Bond - Bank Of Baroda</td>
+      <td>1141.01</td>
+      <td>496.99</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Bond - Mahindra &amp; Mahindra Financial Services Ltd.</td>
+      <td>1787.78</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Bond - Nabha Power Ltd.</td>
+      <td>860.19</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Bond - Power Grid Corporation of India Ltd.</td>
+      <td>3738.63</td>
+      <td>56.06</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Bond - Mangalore Refinery &amp; Petrochemicals Ltd.</td>
+      <td>942.03</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Bond - Axis Finance Ltd.</td>
+      <td>1275.61</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Bond - LIC Housing Finance Ltd.</td>
+      <td>937.44</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Bond - Export Import Bank Of India</td>
+      <td>1815.19</td>
+      <td>718.39</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Bond - National Thermal Power Corporation Ltd.</td>
+      <td>529.51</td>
+      <td>669.70</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Bond - Sundaram Finance Limited</td>
+      <td>510.76</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Bond - ICICI Bank Ltd.</td>
+      <td>714.79</td>
+      <td>593.91</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>Bond - ONGC Petro-Additions Ltd.</td>
+      <td>415.88</td>
+      <td>358.06</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Bond - HDFC Bank Ltd.</td>
+      <td>390.16</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>Bond - India Grid Trust</td>
+      <td>326.86</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>Bond - NHPC Ltd.</td>
+      <td>747.84</td>
+      <td>101.33</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>Bond - Bajaj Housing Finance Ltd.</td>
+      <td>252.43</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Bond - Pipeline Infrastructure Private Ltd.</td>
+      <td>212.29</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Bond - Grasim Industries Limited</td>
+      <td>155.77</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>Bond - Nuclear Power Corporation of India Limited</td>
+      <td>115.84</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>Bond - NIIF Infrastructure Finance Ltd.</td>
+      <td>52.37</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>Bond - Rainbow Devices Trust</td>
+      <td>50.37</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>Bond - Jamnagar Utilities &amp; Power Pvt. Ltd.</td>
+      <td>50.10</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>Bond - IOT Utkal Energy Services Ltd.</td>
+      <td>277.45</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>Bond - Oil &amp; Natural Gas Corporation Ltd.</td>
+      <td>0.00</td>
+      <td>992.79</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>Bond - Andhra Bank</td>
+      <td>0.00</td>
+      <td>728.71</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>Bond - Hindustan Petroleum Corporation Ltd.</td>
+      <td>0.00</td>
+      <td>596.65</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Bond - Syndicate Bank</td>
+      <td>0.00</td>
+      <td>144.17</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>Bond - RBL Bank Ltd.</td>
+      <td>0.00</td>
+      <td>103.07</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>Bond - Vijaya Bank</td>
+      <td>0.00</td>
+      <td>48.25</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>Bond - Food Corporation of India Ltd.</td>
+      <td>0.00</td>
+      <td>29.13</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+      </div>
+  </div>
+</div>
 <script>
 $(document).ready(function(){
       $("#myInput").on("keyup", function() {
